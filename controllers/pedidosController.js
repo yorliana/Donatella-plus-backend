@@ -108,7 +108,7 @@ export const createPedido = (req, res) => {
   res.status(201).json({ message: "Pedido creado" });
 };
 
-export const getPedidos = (req, res) => {
+export const getPedido = (req, res) => {
   res.json({ message: "Listado de pedidos" });
 };
 
