@@ -1,19 +1,20 @@
 import express from "express";
 import { 
-    getDonuts,
-     createDonut,
-      updateDonut,
-        getDonutById,
-       deleteDonut 
+    getPedido,
+     crearPedido,
+      updatePedido,
+        getPedidoById,
+       deletePedido
 
-    } from "../controllers/donutController.js";
+    } from "../controllers/pedidosController.js";
 
 const router = express.Router();
 
-router.get("/", getDonuts);
-router.post("/", createDonut);
-router.get("/:id", getDonutById);
-router.put("/:id", updateDonut);
-router.delete("/:id", deleteDonut);
+router.get("/", getPedido);
+router.post("/", crearPedido);
+router.get("/:id", getPedidoById);
+router.put("/:id", updatePedido);
+router.delete("/:id", deletePedido);
+
 
 export default router;

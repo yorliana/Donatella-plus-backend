@@ -11,17 +11,17 @@ const pedidoSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-   producto: {
-    type: String,
-    required: true
+  productos: {
+    type: Array, // 👈 ahora sí coincide con cart
+    required: true,
   },
-  precio: {
+  total: {
     type: Number,
     required: true,
   },
-   estado: {
+  estado: {
     type: String,
-    default: "pendiente"
+    default: "pendiente",
   }
 }, { timestamps: true });
 

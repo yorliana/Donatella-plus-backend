@@ -9,7 +9,7 @@ export const crearPedido = async (req, res) => {
 console.log("BODY:", req.body);
 
   try {
-    const { nombre, telefono, cart } = req.body;
+    const { nombre, telefono, cart , price,} = req.body;
 
     if (!cart || cart.length === 0) {
       return res.status(400).json({ mensaje: "Carrito vacío" });
